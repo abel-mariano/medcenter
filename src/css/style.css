@@ -5,39 +5,36 @@
 }
 
 /*Cabeçalho*/
-header {
+header{
   display: flex;
   justify-content: center;
   height: 120px;
 }
 
-#container-header {
+.container_geral{
   display: flex;
   justify-content: space-between;
   width: 990px;
 }
 
-.logo {
+.logo{
   display: flex;
   align-items: center;
 }
 
-.menu {
+.menu{
   display: flex;
   align-items: center;
 }
 
-nav ul, nav li {
+nav ul{
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul {
+  margin: 0px;
+  padding: 0px;
   display: flex;
 }
 
-nav a {
+nav a{
   display: block;
   padding: 15px;
   text-decoration: none;
@@ -49,3 +46,99 @@ nav .active a, nav a:hover {
   background-color: #39aae1;
   color: #ffffff;
 }
+
+/*Banner*/
+#banner {
+  background-image: url(../images/img1.jpg);
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  min-height: 670px;
+}
+
+.column {
+  /*div container column*/
+  flex-direction: column;
+}
+
+.banner_headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_headline h1 {
+  color: #ffffff;
+  font-size: 3.75rem;
+  text-shadow: 0px 1px 0px #555555;
+  margin: 0;
+  max-width: 350px;
+}
+
+.banner_headline h2 {
+  color: #ffffff;
+  font-size: 1.313rem;
+  text-shadow: 0px 1px 0px #555555;
+  margin: 0px;
+  max-width: 365px;
+  margin-top: 30px;
+}
+
+.banner_options {
+  display: flex;
+  height: 210px;
+}
+
+.banner1, .banner2, .banner3 {
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.banner1{
+  background-color: #39aae1;
+}
+
+.banner2{
+  background-color: #0079c7;
+}
+
+.banner3{
+  background-color: #2b4c99;
+}
+
+.banner_title{
+  font-size: 1.313rem;
+}
+
+.banner_description {
+  font-size: 0.875rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.banner_options a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.813rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.date_hour1, .date_hour2, .date_hour3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.813rem;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/*Conteúdo*/
